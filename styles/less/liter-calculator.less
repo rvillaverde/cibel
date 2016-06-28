@@ -36,17 +36,46 @@
 }
 
 .liter-calculator-form-header-wrapper {
-  font-weight: 700;
-  padding: 16px;
   border-bottom: 1px solid @c_grays_03;
-  margin-bottom: 24px;
 }
 
-.liter-calculator-form-combo-wrapper {
+.liter-calculator-form-header {
+  font-weight: 700;
+  margin: 16px;
+}
+
+.liter-calculator-form-input-wrapper {
    display: flex;
    justify-content: space-between;
 }
 
 .liter-calculator-input {
   flex: 1;
+  margin: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    margin-bottom: 12px;
+  }
+}
+
+.radio-button-input-wrapper {
+  font-weight: 700;
+}
+
+.text-input {
+  flex: 1;
+
+  &:nth-child(2) {
+    margin-left: 6px;
+  }
+}
+
+.liter-calculator-form-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }

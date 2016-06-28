@@ -112,22 +112,50 @@
           <div class="layout">
             <div class="liter-calculator-form">
               <div class="liter-calculator-form-header-wrapper">
-                <p>Seleccione los datos para realizar el cálculo:</p>
+                <p class="liter-calculator-form-header">Seleccione los datos para realizar el cálculo:</p>
               </div>
-              <div class="liter-calculator-form-combo-wrapper">
-                <select name="Superficie" id="superficie">
-                  <option selected disabled>Superficie</option>
-                  <option value="lalala">Lalala</option>
+
+              <div class="liter-calculator-form-input-wrapper">
+                <select class="liter-calculator-input" ng-model="surface">
+                  <option value="">Superficie</option>
+                  <option value="superficie_1">superficie 1</option>
+                  <option value="superficie_2">superficie 2</option>
+                  <option value="superficie_3">superficie 3</option>
                 </select>
-                <select name="Producto" id="producto">
-                  <option selected disabled>Producto</option>
-                  <option value="lalala">Lalala</option>
+                <select class="liter-calculator-input" ng-model="product">
+                  <option value="">Producto</option>
+                  <option value="producto_1">producto 1</option>
+                  <option value="producto_2">producto 2</option>
+                  <option value="producto_3">producto 3</option>
                 </select>
               </div>
-              <p>A continuación, elija de qué manera desea realizar el cálculo:</p>
+
+              <p class="liter-calculator-form-header">A continuación, elija de qué manera desea realizar el cálculo:</p>
               
-              quantity: {{qty}}
-              cost: {{cost}}
+              <div class="liter-calculator-form-input-wrapper">
+                <div class="liter-calculator-input">
+                  <div class="radio-button-input-wrapper">
+                    <input type="radio" ng-model="parameterType" value="squareMeter">
+                    Metros cuadrados (m2)
+                  </div>
+                  <input type="text" ng-model="squareMeter" placeholder="Metros cuadrados (m2)">
+                </div>
+                <div class="liter-calculator-input">
+                  <div class="radio-button-input-wrapper">
+                    <input type="radio" ng-model="parameterType" value="manual">
+                    Ancho y largo
+                  </div>
+                  <div>
+                    <input type="text" ng-model="width" placeholder="Ancho" class="text-input">
+                    <input type="text" ng-model="large" placeholder="Largo" class="text-input">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="liter-calculator-form-button-wrapper">
+                <button class="calculate-button" ng-click="calculate()">calcular</button>
+              </div>
+
             </div>
           </div>
         </div>
