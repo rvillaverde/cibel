@@ -1,0 +1,42 @@
+@import 'colors.less';
+@import 'blocks.less';
+@import 'images.less';
+
+.foot {
+  background-image: @foot-background;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.footer {
+  background-color: @c_yellow_01;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: @viewport_width;
+  width: 100%;
+}
+
+.footer-logo {
+  background-image: @logo-footer;
+  height: 128px;
+  width: 218px;
+}
+
+.footer-contact-info {
+  margin: 24px 0;
+  text-align: right;
+}
+
+.footer-text {
+  font-size: 18px;
+  line-height: 24px;
+}

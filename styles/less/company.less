@@ -1,0 +1,41 @@
+@import 'images.less';
+
+.company {
+  background-image: @company-background;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 560px;
+  padding: 48px 72px;
+  width: 100%;
+
+  .layout {
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.company-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px;
+
+  .title {
+    color: @c_white;
+    text-transform: capitalize;
+  }
+
+  .company-box-text {
+    align-self: flex-start;
+    color: @c_white;
+    font-family: 'Quattrocento', serif;
+    margin: 12px 0;
+  }
+
+  .blue-button {
+    margin-top: auto;
+  }
+}
