@@ -1,6 +1,10 @@
 @import 'colors.less';
 @import 'images.less';
 
+.liter-calculator-section-content {
+  width: 100%;
+}
+
 .liter-calculator-header-logo {
   background-image: @logo;
   background-position: center;
@@ -39,7 +43,8 @@
   border-bottom: 1px solid @c_grays_03;
 }
 
-.liter-calculator-form-header {
+.liter-calculator-text {
+  color: @c_grays_03;
   font-weight: 700;
   margin: 16px;
 }
@@ -74,8 +79,21 @@
   }
 }
 
-.liter-calculator-form-button-wrapper {
+.liter-calculator-button-wrapper {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+}
+
+.liter-calculator-result {
+  padding: 48px 0;
+}
+
+.liter-calculator-result-content {
+  padding: 24px 0;
+}
+
+.liter-calculator-result-number {
+  font-size: 48px;
+  padding: 0 6px;
 }

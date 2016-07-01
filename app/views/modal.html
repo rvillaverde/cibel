@@ -1,0 +1,24 @@
+<div class="modal-window">
+  <div class="modal-header">
+    <div class="modal-nav">
+      <a class="modal-nav-button" ng-click="closeModal();">
+        <i class="icon-cross-modal"></i>
+      </a>
+    </div>
+    <h3 class="modal-title">{{ header }}</h3>
+    <div class="modal-nav">
+      <a class="modal-nav-button">
+        <i class="icon-arrow-left"></i>
+      </a>
+      <a class="modal-nav-button">
+        <i class="icon-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+  
+  <div class="modal-content">
+    <div class="modal-content-header"></div>
+    <div modal-content template="{{ template }}"></div>
+    <div class="modal-content-footer"></div>
+  </div>
+</div>
