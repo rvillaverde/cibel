@@ -7,18 +7,20 @@
     </div>
     <h3 class="modal-title">{{ header }}</h3>
     <div class="modal-nav">
-      <a class="modal-nav-button">
+      <button class="modal-nav-button" ng-click="showPreviousTemplate();" ng-disabled="disablePrevious();">
         <i class="icon-arrow-left"></i>
-      </a>
-      <a class="modal-nav-button">
+      </button>
+      <button class="modal-nav-button" ng-click="showNextTemplate();" ng-disabled="disableNext();">
         <i class="icon-arrow-right"></i>
-      </a>
+      </button>
     </div>
   </div>
   
-  <div class="modal-content">
+  <div class="modal-content-wrapper">
     <div class="modal-content-header"></div>
-    <div modal-content template="{{ template }}"></div>
+    <div class="modal-template-wrapper">
+      <div class="modal-template" modal-content template-type="{{ templateType }}" template-id="{{ templateId }}"></div>
+    </div>
     <div class="modal-content-footer"></div>
   </div>
 </div>

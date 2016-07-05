@@ -4,9 +4,10 @@ cibelApp.directive('literCalculatorSection', function() {
     templateUrl: './app/views/liter-calculator.html',
     link: function(scope, element, attributes) {
       if ($(".main").is(":hidden")) {
-        $(".home").hide();
-        $(".products").hide();
-        $(".main").slideDown();
+        $("#home").hide();
+        $("#products").hide();
+        $("#main").slideDown();
+        $("#main").scrollTop();
       }
     }
   }

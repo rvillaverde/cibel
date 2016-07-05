@@ -7,7 +7,23 @@
   color: @c_white;
   font-size: 26px;
   line-height: 36px;
+  margin: 12px;
   padding: 24px;
+  white-space: nowrap;
+
+  @media @small-screen {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 12px 24px;
+  }
+
+  &:focus {
+    color: @c_white;
+  }
+
+  &:hover {
+    color: @c_white;
+  }
 }
 
 .white-button {
@@ -18,7 +34,23 @@
   cursor: pointer;
   font-size: 18px;
   line-height: 24px;
+  margin: 12px;
   padding: 12px 48px;
+
+  @media @small-screen {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 6px;
+    padding: 12px 24px;
+  }
+
+  &:focus {
+    color: @c_grays_04;
+  }
+
+  &:hover {
+    color: @c_grays_04;
+  }
 }
 
 .blue-button {
@@ -28,8 +60,25 @@
   color: @c_white;
   font-size: 24px;
   line-height: 24px;
+  margin: 12px;
   padding: 12px 48px;
   text-transform: uppercase;
+  white-space: nowrap;
+
+  @media @small-screen {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 6px;
+    padding: 12px 24px;
+  }
+
+  &:focus {
+    color: @c_white;
+  }
+
+  &:hover {
+    color: @c_white;
+  }
 }
 
 .liter-calculator-button {
@@ -42,12 +91,12 @@
     font-size: 34px;
     vertical-align: middle;
   }
+}
 
-  .label {
-    margin-left: 12px;
-    text-transform: uppercase;
-    vertical-align: middle;
-  }
+.liter-calculator-label {
+  margin-left: 12px;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .calculate-button {

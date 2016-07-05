@@ -23,20 +23,51 @@
   justify-content: space-between;
   max-width: @viewport_width;
   width: 100%;
+
+  @media @small-screen {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 .footer-logo {
   background-image: @logo-footer;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 128px;
   width: 218px;
+
+  @media @small-screen {
+    height: 102px;
+    width: 174px;
+    margin: 12px;
+  }
 }
 
 .footer-contact-info {
   margin: 24px 0;
   text-align: right;
+
+  @media @small-screen {
+    margin: 12px;
+    align-self: flex-end;
+  }
+}
+
+.footer-title {
+  @media @small-screen {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .footer-text {
   font-size: 18px;
   line-height: 24px;
+
+  @media @small-screen {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

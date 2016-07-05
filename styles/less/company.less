@@ -5,15 +5,20 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 560px;
+  min-height: 480px;
   padding: 48px 72px;
   width: 100%;
 
-  .layout {
-    align-items: stretch;
-    display: flex;
-    justify-content: space-between;
+  @media @small-screen {
+    padding: 24px;
   }
+}
+
+.company-box-wrapper {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .company-box {
@@ -21,7 +26,13 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 24px;
+  margin: 24px;
+  min-width: 360px;
+
+  @media @small-screen {
+    margin: 12px;
+    min-width: inherit;
+  }
 
   .title {
     color: @c_white;
@@ -33,9 +44,5 @@
     color: @c_white;
     font-family: 'Quattrocento', serif;
     margin: 12px 0;
-  }
-
-  .blue-button {
-    margin-top: auto;
   }
 }

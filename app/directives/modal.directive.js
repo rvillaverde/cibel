@@ -1,10 +1,13 @@
 cibelApp.directive('modal', function() {
   return {
     restrict: 'EA',
+    controller: 'modalController',
     replace: true,
     scope: {
       header: '@',
-      template: '@'
+      templateType: '@',
+      templateId: '@',
+      maxTemplateId: '@'
     },
     templateUrl: './app/views/modal.html',
     link: function(scope, element, attributes) {

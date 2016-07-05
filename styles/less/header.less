@@ -1,6 +1,7 @@
 @import 'colors.less';
 @import 'blocks.less';
 @import 'images.less';
+@import 'blocks.less';
 
 .header {
   background-color: @c_yellow_01;
@@ -13,7 +14,6 @@
   display: flex;
   justify-content: center;
   max-height: 86px;
-  
 }
 
 .header-logo {
@@ -27,8 +27,14 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  margin: 0;
   max-width: @viewport_width;
+  padding: 0;
   width: 100%;
+
+  @media @small-screen {
+    display: none;
+  }
 }
 
 .main-nav {

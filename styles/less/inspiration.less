@@ -1,5 +1,6 @@
 @import 'images.less';
 @import 'colors.less';
+@import 'blocks.less';
 
 .inspiration {
   background-image: @inspiration-background;
@@ -10,9 +11,17 @@
   width: 100%;
   padding: 100px 0;
 
+  @media @small-screen {
+    padding: 24px;
+  }
+
   .title {
     color: @c_white;
     line-height: 121px;
+
+    @media @small-screen {
+      line-height: 50px;
+    }
   }
 
   .layout {
@@ -24,9 +33,13 @@
 .inspiration-box-wrapper {
   display: flex;
   flex-grow: 1;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 120px;
-  padding-bottom: 0;
+  padding: 36px;
+
+  @media @small-screen {
+    padding: 0;
+  }
 }
 
 .inspiration-box {
@@ -36,10 +49,18 @@
   flex-direction: column;
   margin: 24px;
   padding: 18px;
+  min-width: 300px;
+
+  @media @small-screen {
+    margin: 12px;
+  }
+}
+
+.inspiration-box-button-wrapper {
+  align-self: flex-end;
+  margin-top: auto;
 
   .white-button {
-    align-self: flex-end;
-    margin-top: auto;
     text-transform: uppercase;
   }
 }
